@@ -358,10 +358,63 @@ Embedded Firmware ตั้งแต่การเตรียมเครื�
 - [ESP-IDF Documentation](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/)
 
 
-### Week 04
-- Summary:
-- Key concepts:
-- What I learned:
+
+### Week 04: Onsite Workshop — ESP32-S3 Hardware and Firmware Deployment
+
+#### 1. Summary
+
+สัปดาห์ที่ 4 เป็นการเรียนรู้แบบ Onsite Workshop
+โดยได้รับบอร์ด ESP32-S3 สำหรับฝึกปฏิบัติจริง
+
+กิจกรรมมุ่งเน้นการเชื่อมต่อบอร์ดเข้ากับคอมพิวเตอร์
+การเตรียมสภาพแวดล้อมสำหรับพัฒนาโปรแกรม
+และการฝึก Deploy Firmware ลงบน Hardware
+
+#### 2. Hardware Preparation
+
+กิจกรรมการเรียนรู้ประกอบด้วย
+
+- รับและตรวจสอบบอร์ด ESP32-S3
+- ศึกษาส่วนประกอบและการเชื่อมต่อของบอร์ด
+- เชื่อมต่อบอร์ดกับคอมพิวเตอร์ผ่าน USB
+- ตรวจสอบการเชื่อมต่อ Serial Port
+- เตรียมเครื่องมือสำหรับ Upload Firmware
+
+#### 3. Firmware Deployment Practice
+
+ศึกษาขั้นตอนการนำโปรแกรมจากคอมพิวเตอร์
+ไปทำงานบนไมโครคอนโทรลเลอร์จริง
+
+กระบวนการประกอบด้วย
+
+1. เปิดโปรเจกต์ Firmware
+2. ตรวจสอบ Source Code
+3. ตั้งค่า Target Microcontroller
+4. Build โปรแกรม
+5. Flash หรือ Upload Firmware
+6. ตรวจสอบการทำงานผ่าน Serial Monitor
+
+#### 4. Key Concepts
+
+- ESP32-S3 Development Board
+- Hardware Connection
+- USB and Serial Communication
+- Firmware Deployment
+- Build and Flash Process
+- Hardware Testing
+
+#### 5. Learning Reflection
+
+การเรียนรู้แบบ Onsite ช่วยให้เข้าใจความสัมพันธ์
+ระหว่าง Software และ Hardware มากขึ้น
+
+ได้ฝึกกระบวนการนำ Source Code
+มาสร้างเป็น Firmware และ Upload
+ลงบนไมโครคอนโทรลเลอร์จริง
+
+ประสบการณ์นี้เป็นพื้นฐานสำคัญสำหรับ
+การพัฒนาโปรแกรมด้วยตนเองใน Week 05
+
 
 ### Week 05
 - Summary:
