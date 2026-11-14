@@ -101,6 +101,12 @@ Week 01 ทำให้เห็นภาพรวมของหลักสู
 - ศึกษาชิป ESP32-S3 ที่ใช้บนบอร์ด ES3C28P
 - ทำความรู้จักองค์ประกอบพื้นฐานของไมโครคอนโทรลเลอร์
 
+
+![ESP32-S3 Architecture](images/week02-esp32-architecture.jpg)
+
+**Figure 2:** ESP32-S3 Architecture and Memory System.
+
+
 **Lesson 02: ESP32 History**
 - ศึกษาพัฒนาการจาก ESP8266 ถึง ESP32-S3
 - ทำความเข้าใจภาพรวมของตระกูล ESP32
@@ -124,6 +130,12 @@ Week 01 ทำให้เห็นภาพรวมของหลักสู
 **Lesson 06: USB and Serial**
 - ระบบ USB/Serial ของบอร์ด
 - ข้อควรระวังจากการไม่มีชิป USB-UART แยก
+
+
+![ES3C28P Board Components](images/week02-board-components.jpg)
+
+**Figure 3:** ES3C28P Board Hardware Components.
+
 
 **Lesson 07: Power and Battery**
 - วงจรชาร์จแบตเตอรี่ TP4054
@@ -160,6 +172,12 @@ Week 01 ทำให้เห็นภาพรวมของหลักสู
 - การตรวจสอบขาที่ใช้งานได้และขาที่มีข้อจำกัด
 
 #### 4. Firmware Development (Lessons 14–15)
+
+
+![ESP-IDF Development Workflow](images/week02-espidf-workflow.jpg)
+
+**Figure 4:** ESP-IDF Firmware Development Workflow.
+
 
 **Lesson 14: ESP-IDF Installation**
 - ติดตั้ง ESP-IDF ผ่าน Visual Studio Code
