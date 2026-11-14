@@ -20,6 +20,22 @@ This repository contains my learning summary for ND01 Mini-Project #1.
 บทเรียนนี้เป็นจุดเริ่มต้นสำหรับการศึกษาระบบสมองกลฝังตัว
 และเตรียมความพร้อมสำหรับการเรียนรู้ในสัปดาห์ถัดไป
 
+
+#### Hardware Overview
+
+ภาพแสดงขนาดทางกายภาพของจอแสดงผลและ
+แผงวงจรที่ใช้ในการศึกษา Embedded Systems
+
+![Board Dimensions](images/week01-board-dimensions.png)
+
+**Figure 1:** Physical dimensions of the
+development board and display module.
+
+จากภาพ จอแสดงผลมีขนาดภายนอกประมาณ
+73.06 × 50.54 mm และแผงวงจรด้านหลัง
+มีขนาดประมาณ 69.00 × 49.90 mm
+
+
 #### 2. Key Concepts
 
 - Course Introduction:
