@@ -222,10 +222,129 @@ Week 01 ทำให้เห็นภาพรวมของหลักสู
 - [Course Illustrations](https://github.com/drsanti/kmutt-nd69/tree/main/nd1/docs/week02/lessons/images)
 
 
-### Week 03: ESP-IDF and Hello World
-- Summary:
-- Key concepts:
-- What I learned:
+
+### Week 03: ESP-IDF Setup and ESP32-S3 Hello World
+
+#### 1. Summary
+
+สัปดาห์ที่ 3 ศึกษาการติดตั้งและใช้งาน ESP-IDF
+สำหรับพัฒนา Firmware บนไมโครคอนโทรลเลอร์ ESP32-S3
+
+เนื้อหาครอบคลุมการเตรียม Development Environment
+การใช้งาน Visual Studio Code การ Build Firmware
+การ Flash โปรแกรม และการตรวจสอบผ่าน Serial Monitor
+
+#### 2. Development Environment
+
+เครื่องมือที่ใช้ในการพัฒนา ได้แก่
+
+- Operating System: Windows
+- IDE: Visual Studio Code
+- Framework: Espressif IoT Development Framework (ESP-IDF)
+- Programming Language: C
+- Target Microcontroller: ESP32-S3
+- Development Board: Waveshare ESP32-S3-Touch-LCD-2.8
+
+ESP-IDF เป็น Framework สำหรับพัฒนา Embedded Software
+โดยประกอบด้วย Libraries, Build System และเครื่องมือ
+ที่ช่วยให้สามารถพัฒนา Firmware สำหรับ ESP32 ได้
+
+#### 3. ESP-IDF Architecture
+
+องค์ประกอบสำคัญในการพัฒนา ได้แก่
+
+**ESP-IDF Framework**
+- จัดเตรียม API และ Libraries สำหรับควบคุม Hardware
+- รองรับ Peripheral และ FreeRTOS
+
+**Compiler Toolchain**
+- แปลง Source Code ให้เป็น Machine Code
+- สร้างไฟล์ Firmware สำหรับไมโครคอนโทรลเลอร์
+
+**Python Environment**
+- ใช้สำหรับรันเครื่องมือและ Build Scripts
+- สนับสนุนการทำงานของ idf.py
+
+**Firmware Project**
+- จัดเก็บ Source Code และ Configuration
+- ประกอบด้วยไฟล์ CMake และโฟลเดอร์ main
+
+#### 4. Practical Exercise: Hello World
+
+การทดลองนี้ใช้บอร์ด ESP32-S3 จริง
+เพื่อศึกษากระบวนการพัฒนา Firmware
+
+ขั้นตอนการทำงาน:
+
+1. เปิดโปรเจกต์ใน Visual Studio Code
+2. เตรียม ESP-IDF Development Environment
+3. ตั้งค่า Target เป็น ESP32-S3
+4. Build Firmware
+5. เชื่อมต่อบอร์ดผ่าน USB
+6. Flash Firmware ลงบอร์ด
+7. เปิด Serial Monitor
+8. ตรวจสอบข้อความที่ส่งจากไมโครคอนโทรลเลอร์
+
+ตัวอย่างคำสั่ง ESP-IDF:
+
+```bash
+idf.py --version
+idf.py set-target esp32s3
+idf.py build
+idf.py -p COM4 flash monitor
+```
+
+หมายเหตุ: COM4 เป็นพอร์ตที่เคยใช้ในการทดลอง
+และต้องตรวจสอบหมายเลขพอร์ตจริงก่อนใช้งานอีกครั้ง
+
+#### 5. Experimental Results
+
+จากการทดลองก่อนหน้านี้ สามารถพัฒนาและทดสอบ
+โปรแกรม Hello World บน ESP32-S3 ได้สำเร็จ
+
+ผลการทดลองที่เคยบันทึกไว้:
+
+- Build Firmware: Successful
+- Flash Firmware: Successful
+- Serial Monitor: Successful
+
+ตัวอย่างข้อความที่แสดงผ่าน Serial Monitor:
+
+```text
+Hello World 2 | Count: 3
+Hello World 2 | Count: 4
+Hello World 2 | Count: 5
+```
+
+ผลลัพธ์แสดงให้เห็นว่าไมโครคอนโทรลเลอร์สามารถ
+รัน Firmware และส่งข้อความผ่าน Serial Interface ได้
+
+#### 6. Key Concepts
+
+- ESP-IDF Development Framework
+- Compiler Toolchain
+- Python Development Environment
+- Firmware Build Process
+- Flash Memory Programming
+- Serial Communication
+- ESP32-S3 Hardware Testing
+
+#### 7. Learning Reflection
+
+การทดลองนี้ช่วยให้เข้าใจกระบวนการพัฒนา
+Embedded Firmware ตั้งแต่การเตรียมเครื่องมือ
+การเขียนโปรแกรม การ Compile และ Build
+ไปจนถึงการ Flash ลงบนไมโครคอนโทรลเลอร์จริง
+
+นอกจากนี้ยังเห็นความสำคัญของ Serial Monitor
+ในการตรวจสอบการทำงานและวิเคราะห์ปัญหา
+ระหว่างพัฒนา Embedded Systems
+
+#### 8. References
+
+- [Week 03 Course Materials](https://github.com/drsanti/kmutt-nd69/tree/main/nd1/docs/week03)
+- [ESP-IDF Documentation](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/)
+
 
 ### Week 04
 - Summary:
