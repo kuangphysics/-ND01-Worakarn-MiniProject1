@@ -77,10 +77,132 @@ Week 01 ทำให้เห็นภาพรวมของหลักสู
 - [Week 01 Presentation](https://canva.link/8hgvsk8cixlah8p)
 
 
-### Week 02: Hardware and Embedded Fundamentals
-- Summary:
-- Key concepts:
-- What I learned:
+
+### Week 02: ES3C28P Hardware & Embedded Fundamentals
+
+#### 1. Summary
+
+สัปดาห์ที่ 2 ศึกษาพื้นฐาน Hardware และ Embedded Systems
+ผ่านบอร์ด ES3C28P ซึ่งใช้ไมโครคอนโทรลเลอร์ ESP32-S3R8
+
+เนื้อหาประกอบด้วย 15 บทเรียน โดยเรียงลำดับจาก
+สถาปัตยกรรมชิป หน่วยความจำ อุปกรณ์บนบอร์ด
+ไปจนถึงเครื่องมือและภาษาโปรแกรมสำหรับพัฒนา Firmware
+
+การเรียนรู้แบ่งออกเป็น 3 ส่วนหลัก ได้แก่
+
+1. Chip Architecture
+2. Board Hardware and Peripherals
+3. Firmware Development Fundamentals
+
+#### 2. Chip Architecture (Lessons 01–05)
+
+**Lesson 01: ESP32-S3R8 Chip**
+- ศึกษาชิป ESP32-S3 ที่ใช้บนบอร์ด ES3C28P
+- ทำความรู้จักองค์ประกอบพื้นฐานของไมโครคอนโทรลเลอร์
+
+**Lesson 02: ESP32 History**
+- ศึกษาพัฒนาการจาก ESP8266 ถึง ESP32-S3
+- ทำความเข้าใจภาพรวมของตระกูล ESP32
+
+**Lesson 03: Memory Types**
+- RAM, SRAM และ PSRAM
+- Flash Memory และ ROM
+- eFuse Memory
+
+**Lesson 04: Firmware Memory**
+- Heap และ Stack
+- Flash Partition
+- Non-Volatile Storage (NVS)
+
+**Lesson 05: ESP-IDF Toolchain**
+- ทำความรู้จัก ESP-IDF
+- เครื่องมือสำหรับพัฒนา Firmware บน ESP32
+
+#### 3. Board Hardware (Lessons 06–13)
+
+**Lesson 06: USB and Serial**
+- ระบบ USB/Serial ของบอร์ด
+- ข้อควรระวังจากการไม่มีชิป USB-UART แยก
+
+**Lesson 07: Power and Battery**
+- วงจรชาร์จแบตเตอรี่ TP4054
+- วงจรควบคุมแรงดัน LDO
+- การวัดแรงดันแบตเตอรี่ผ่าน ADC
+
+**Lesson 08: TFT Display**
+- จอ ILI9341V
+- ความละเอียด 240 × 320 pixels
+- การสื่อสารผ่าน SPI
+
+**Lesson 09: Touch Screen**
+- ชิป FT6336G
+- Capacitive Touch
+- การสื่อสารผ่าน I2C
+
+**Lesson 10: Audio System**
+- ES8311 Audio Codec
+- FM8002E Audio Amplifier
+- MEMS Microphone
+
+**Lesson 11: RGB LED**
+- WS2812 Addressable RGB LED
+- ความสำคัญของ Timing
+- การใช้งาน RMT Peripheral
+
+**Lesson 12: MicroSD**
+- การเชื่อมต่อ MicroSD
+- SDIO แบบ 4-bit
+
+**Lesson 13: GPIO and Expansion**
+- Expansion Header
+- GPIO Pin Mapping
+- การตรวจสอบขาที่ใช้งานได้และขาที่มีข้อจำกัด
+
+#### 4. Firmware Development (Lessons 14–15)
+
+**Lesson 14: ESP-IDF Installation**
+- ติดตั้ง ESP-IDF ผ่าน Visual Studio Code
+- เตรียมเครื่องมือสำหรับพัฒนา Firmware
+- แนวทางทดสอบบนบอร์ดจริง
+
+**Lesson 15: Embedded C and FreeRTOS**
+- ทบทวนพื้นฐานภาษา Embedded C
+- แนวคิดการจัดการ Task
+- พื้นฐาน FreeRTOS สำหรับ Embedded Systems
+
+#### 5. Key Concepts
+
+แนวคิดสำคัญที่ได้จากการศึกษาเนื้อหาประกอบด้วย
+
+- Microcontroller Architecture
+- Memory Management
+- GPIO and Peripheral Interfaces
+- SPI, I2C, USB และ SDIO
+- Power Management
+- ESP-IDF Development Environment
+- Embedded C and FreeRTOS
+
+#### 6. Learning Reflection
+
+จากการศึกษาเนื้อหา Week 02 ทำให้เห็นว่า
+การพัฒนา Embedded Systems จำเป็นต้องเข้าใจ
+ทั้งโครงสร้าง Hardware และ Software ร่วมกัน
+
+การศึกษาส่วนประกอบของบอร์ด ES3C28P
+ช่วยให้เข้าใจความสัมพันธ์ระหว่างไมโครคอนโทรลเลอร์
+หน่วยความจำ จอแสดงผล ระบบสัมผัส และอุปกรณ์ต่อพ่วง
+
+ความรู้เหล่านี้เป็นพื้นฐานสำหรับการศึกษา ESP-IDF
+และการพัฒนา Firmware ในบทเรียนถัดไป
+
+#### 7. References
+
+- [Week 02 Course Materials](https://github.com/drsanti/kmutt-nd69/tree/main/nd1/docs/week02)
+- [Thai Lessons](https://github.com/drsanti/kmutt-nd69/tree/main/nd1/docs/week02/lessons)
+- [English Lessons](https://github.com/drsanti/kmutt-nd69/tree/main/nd1/docs/week02/lessons/EN)
+- [Course Illustrations](https://github.com/drsanti/kmutt-nd69/tree/main/nd1/docs/week02/lessons/images)
+
 
 ### Week 03: ESP-IDF and Hello World
 - Summary:
