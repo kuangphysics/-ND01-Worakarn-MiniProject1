@@ -428,10 +428,160 @@ Embedded Firmware ตั้งแต่การเตรียมเครื�
 การพัฒนาโปรแกรมด้วยตนเองใน Week 05
 
 
-### Week 05
-- Summary:
-- Key concepts:
-- What I learned:
+
+### Week 05: Self-Directed Learning and ESP32-S3 Programming
+
+#### 1. Summary
+
+สัปดาห์ที่ 5 เป็นการเรียนรู้ด้วยตนเอง (Self-Directed Learning)
+โดยนำความรู้จาก Week 01–04 มาทบทวนและประยุกต์ใช้
+กับการพัฒนาโปรแกรมบนไมโครคอนโทรลเลอร์ ESP32-S3
+
+มุ่งเน้นการใช้ Visual Studio Code ร่วมกับ ESP-IDF
+เพื่อศึกษาโครงสร้างโปรแกรม การ Build Firmware
+การ Flash โปรแกรมลงบอร์ด และการตรวจสอบผล
+ผ่าน Serial Monitor
+
+นอกจากนี้ยังศึกษาความเป็นไปได้ในการพัฒนา
+โปรแกรมที่ซับซ้อนขึ้นจาก Hello World
+
+#### 2. Review of Previous Lessons
+
+**Week 01: Introduction**
+- แนวคิดพื้นฐานของ Embedded Systems
+- ภาพรวมไมโครคอนโทรลเลอร์และอุปกรณ์ Hardware
+- แนวทางการพัฒนาระบบ Embedded
+
+**Week 02: Hardware Fundamentals**
+- สถาปัตยกรรม ESP32-S3
+- Memory และ Firmware
+- GPIO และ Peripheral Interfaces
+- TFT Display และ Touchscreen
+- การสื่อสารระหว่าง Hardware และ Software
+
+**Week 03: ESP-IDF Development**
+- ESP-IDF Framework
+- Visual Studio Code
+- Firmware Build Process
+- Flash และ Serial Monitor
+- Hello World Program
+
+**Week 04: Onsite Workshop**
+- รับและศึกษาบอร์ด ESP32-S3
+- เชื่อมต่อ Hardware ผ่าน USB
+- ฝึก Upload Firmware ลงบอร์ดจริง
+- เรียนรู้กระบวนการ Firmware Deployment
+
+#### 3. Development Environment
+
+เครื่องมือที่ใช้ในการศึกษาและทดลอง ได้แก่
+
+- Operating System: Windows
+- IDE: Visual Studio Code
+- Framework: ESP-IDF
+- Programming Language: C
+- Microcontroller: ESP32-S3
+- Development Board: ESP32-S3 Touch LCD 2.8-inch
+- Communication: USB Serial
+
+#### 4. Programming Practice
+
+ทบทวนการเขียนโปรแกรม Hello World
+และการส่งข้อความผ่าน Serial Monitor
+
+แนวคิดสำคัญที่ศึกษา ได้แก่
+
+- app_main() เป็นจุดเริ่มต้นของโปรแกรม ESP-IDF
+- printf() และ ESP_LOGI() ใช้แสดงข้อความ
+- while(1) ใช้สร้างการทำงานแบบต่อเนื่อง
+- vTaskDelay() ใช้กำหนดช่วงเวลาการทำงาน
+- Build ใช้แปลง Source Code เป็น Firmware
+- Flash ใช้อัปโหลด Firmware ลงบอร์ด
+- Monitor ใช้ตรวจสอบผลการทำงาน
+
+ตัวอย่างผลการทดลอง Hello World
+ที่เคยดำเนินการ:
+
+    Hello World 2 | Count: 3
+    Hello World 2 | Count: 4
+    Hello World 2 | Count: 5
+
+การทดลองดังกล่าวช่วยให้เข้าใจการทำงาน
+ของโปรแกรมบนไมโครคอนโทรลเลอร์จริง
+
+#### 5. Further Project Exploration
+
+หลังจากศึกษา Hello World
+ได้วางแนวทางพัฒนาโปรแกรมเพิ่มเติมดังนี้
+
+**Project 01: Counter and Timer**
+- ศึกษาการใช้ตัวแปรและ Loop
+- แสดง Counter ผ่าน Serial Monitor
+- ศึกษาการใช้ FreeRTOS Delay
+
+**Project 02: GPIO and Button Input**
+- ศึกษาการอ่านสถานะ Digital Input
+- ทดลองใช้ปุ่มควบคุมการทำงานของโปรแกรม
+- แสดงสถานะผ่าน Serial Monitor
+
+**Project 03: LCD Display Programming**
+- ศึกษาการควบคุม TFT LCD
+- แสดงข้อความและตัวเลขบนหน้าจอ
+- ศึกษา Display Driver
+
+**Project 04: Touchscreen Interaction**
+- ศึกษาการรับข้อมูลจาก Touchscreen
+- พัฒนา User Interface
+- ใช้การสัมผัสควบคุมการทำงาน
+
+**Project 05: Embedded Dashboard**
+- ออกแบบหน้าจอแสดงข้อมูล
+- รวม Input และ Output
+- พัฒนาระบบ Interactive Embedded Application
+
+หมายเหตุ: รายการ Project ข้างต้นเป็นแนวทาง
+สำหรับศึกษาและพัฒนาต่อยอด
+ไม่ใช่ผลการทดลองที่เสร็จสมบูรณ์ทั้งหมด
+
+#### 6. Key Concepts
+
+- Self-Directed Learning
+- Embedded C Programming
+- ESP-IDF Framework
+- Visual Studio Code
+- Firmware Development
+- Build, Flash and Monitor
+- FreeRTOS
+- GPIO and Peripheral Control
+- TFT LCD and Touchscreen
+- Embedded System Integration
+
+#### 7. Learning Reflection
+
+การเรียนรู้ด้วยตนเองในสัปดาห์นี้
+ช่วยให้สามารถทบทวนและเชื่อมโยงความรู้
+ตั้งแต่พื้นฐาน Hardware ไปจนถึง Software Development
+
+ได้เข้าใจกระบวนการพัฒนา Firmware
+และการนำโปรแกรมไปใช้งานบน ESP32-S3
+ผ่าน Visual Studio Code มากขึ้น
+
+การเริ่มต้นจาก Hello World
+ทำให้เห็นแนวทางการต่อยอดไปสู่การอ่าน Input
+การควบคุม Output และการพัฒนา
+Interactive Application บน Embedded Systems
+
+สิ่งสำคัญที่ได้รับคือการฝึกค้นคว้า
+ทดลอง แก้ไขปัญหา และเรียนรู้ด้วยตนเอง
+เพื่อเตรียมพร้อมสำหรับการพัฒนาโครงงานต่อไป
+
+#### 8. References
+
+- [ESP-IDF Programming Guide](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/)
+- [ESP-IDF GitHub Repository](https://github.com/espressif/esp-idf)
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [KMUTT ND69 Course Repository](https://github.com/drsanti/kmutt-nd69)
+
 
 ## 3. Practical Exercises
 Describe the exercises completed and include screenshots or code examples.
