@@ -249,6 +249,10 @@ ESP-IDF เป็น Framework สำหรับพัฒนา Embedded Softwa
 โดยประกอบด้วย Libraries, Build System และเครื่องมือ
 ที่ช่วยให้สามารถพัฒนา Firmware สำหรับ ESP32 ได้
 
+![ESP-IDF Development Environment](images/week03-development-environment.png)
+
+**Figure 5:** ESP-IDF Development Environment.
+
 #### 3. ESP-IDF Architecture
 
 องค์ประกอบสำคัญในการพัฒนา ได้แก่
@@ -297,6 +301,10 @@ idf.py -p COM4 flash monitor
 หมายเหตุ: COM4 เป็นพอร์ตที่เคยใช้ในการทดลอง
 และต้องตรวจสอบหมายเลขพอร์ตจริงก่อนใช้งานอีกครั้ง
 
+![ESP-IDF Build Flash Monitor Workflow](images/week03-build-flash-workflow.png)
+
+**Figure 6:** ESP-IDF Build, Flash and Monitor Workflow.
+
 #### 5. Experimental Results
 
 จากการทดลองก่อนหน้านี้ สามารถพัฒนาและทดสอบ
@@ -318,6 +326,10 @@ Hello World 2 | Count: 5
 
 ผลลัพธ์แสดงให้เห็นว่าไมโครคอนโทรลเลอร์สามารถ
 รัน Firmware และส่งข้อความผ่าน Serial Interface ได้
+
+![ESP32-S3 Serial Monitor](images/week03-serial-monitor.png)
+
+**Figure 7:** ESP32-S3 Serial Monitor Illustration (Simulated).
 
 #### 6. Key Concepts
 
