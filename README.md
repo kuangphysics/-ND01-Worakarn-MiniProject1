@@ -380,6 +380,10 @@ Embedded Firmware ตั้งแต่การเตรียมเครื�
 - ตรวจสอบการเชื่อมต่อ Serial Port
 - เตรียมเครื่องมือสำหรับ Upload Firmware
 
+![ESP32-S3 Touch LCD Hardware](images/week04-esp32-touch-lcd.png)
+
+**Figure 8:** ESP32-S3 Touch LCD Development Board (Illustration).
+
 #### 3. Firmware Deployment Practice
 
 ศึกษาขั้นตอนการนำโปรแกรมจากคอมพิวเตอร์
@@ -394,6 +398,10 @@ Embedded Firmware ตั้งแต่การเตรียมเครื�
 5. Flash หรือ Upload Firmware
 6. ตรวจสอบการทำงานผ่าน Serial Monitor
 
+![ESP32-S3 Firmware Deployment](images/week04-firmware-deployment.png)
+
+**Figure 9:** ESP32-S3 Firmware Deployment Workflow using VS Code and ESP-IDF.
+
 #### 4. Key Concepts
 
 - ESP32-S3 Development Board
@@ -402,6 +410,10 @@ Embedded Firmware ตั้งแต่การเตรียมเครื�
 - Firmware Deployment
 - Build and Flash Process
 - Hardware Testing
+
+![ESP32-S3 Onsite Workshop](images/week04-onsite-workshop.png)
+
+**Figure 10:** ESP32-S3 Onsite Workshop (Simulated Illustration).
 
 #### 5. Learning Reflection
 
