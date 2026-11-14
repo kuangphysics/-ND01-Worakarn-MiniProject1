@@ -583,12 +583,3 @@ Interactive Application บน Embedded Systems
 - [KMUTT ND69 Course Repository](https://github.com/drsanti/kmutt-nd69)
 
 
-## 3. Practical Exercises
-Describe the exercises completed and include screenshots or code examples.
-
-## 4. Learning Reflection
-Describe the challenges, solutions, and knowledge gained.
-
-## 5. References
-- https://github.com/drsanti/kmutt-nd69
-  
